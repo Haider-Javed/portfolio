@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00171f;
+    /* Dark background for stars */
+    color: #333;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Glittering Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: glitter 4s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes glitter {
+    0% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-20px);
+        opacity: 0.4;
+    }
+}
+
+header {
+    background-color: #00171f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    color: hsl(197, 97%, 48%);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: hsl(197, 97%, 48%);
+    transform: scale(1.4);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.main {
+    display: flex;
+    background: transparent;
+    /* Transparent to show stars */
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+
+}
+
+#main-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url("img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main-image:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#hi {
+    font-size: 2rem;
+    color: #febf02;
+}
+
+#hi:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#name {
+    font-size: 2.5rem;
+    color: hsl(197, 97%, 48%);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(16, end),
+        blink-caret .75s step-end infinite;
+    max-width: fit-content;
+}
+
+#name:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main {
+    justify-content: flex-start;
+    padding-top: 10px;
+    height: auto;
+    min-height: 100vh;
+}
+
+body {
+    overflow-y: auto;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+#main-content {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+
+
+}
+
+#main-content p:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#btn {
+    background-color: hsl(197, 97%, 48%);
+    padding: 1rem 2rem;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}

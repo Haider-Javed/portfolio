@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00171f;
+    /* Dark background for stars */
+    color: #333;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Glittering Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: glitter 4s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes glitter {
+    0% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-20px);
+        opacity: 0.4;
+    }
+}
+
+header {
+    background-color: #00171f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    color: hsl(197, 97%, 48%);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: hsl(197, 97%, 48%);
+    transform: scale(1.4);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.skill {
+    background-color: #00171f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.main {
+    height: 100%;
+    background-color: transparent;
+    /* Transparent for stars */
+    /* box-shadow: removed */
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 230px;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Glassmorphism */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxes:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid hsl(197, 97%, 48%);
+    box-shadow: 0 0 20px rgba(0, 168, 232, 0.4);
+    transform: translateY(-10px) scale(1.02);
+}
+
+.boxes h3 {
+    margin-top: -20px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    /* White text */
+    font-weight: bold;
+
+}
+
+.boxes p {
+    color: #d1d5db;
+    /* Light gray text */
+    font-size: 0.9rem;
+}
+
+.skillcontainer {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skillbullet {
+    background-color: #38bdf81a;
+    color: #38bdf8;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}

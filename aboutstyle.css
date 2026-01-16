@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+}
+
+header {
+    background-color: #00171f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #333;
+}
+
+header nav {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    color: hsl(197, 97%, 48%);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: hsl(197, 97%, 48%);
+    transform: scale(1.4);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: radial-gradient(circle at center, hsl(197, 97%, 12%) 0%, hsl(197, 97%, 5%) 100%);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.aboutmepara {
+    flex: 2;
+    padding: 2rem;
+}
+
+.aboutmepara h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #febf02;
+}
+
+.aboutmepara p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.bld {
+    color: #febf02;
+    font-weight: bold;
+    font-size: 1.1rem;
+
+
+}
+
+
+
+.image {
+    width: 350px;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex: 1;
+    height: 80vh;
+    position: sticky;
+    top: 0;
+    padding: 2rem;
+}
