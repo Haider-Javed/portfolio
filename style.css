@@ -60,6 +60,7 @@ body::before {
 
 header {
     background-color: #00171f;
+    border-bottom: 1px solid #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -228,7 +229,7 @@ body {
 }
 
 #btn {
-    background-color: hsl(197, 97%, 48%);
+    background: linear-gradient(-50deg, hsl(133, 87%, 66%), hsl(64, 82%, 72%));
     padding: 1rem 2rem;
     border-radius: 50%;
     color: #fff;
@@ -240,4 +241,9 @@ body {
 #btn:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+
+}
+#btn a {
+    text-decoration: none;
+    color: black;
 }
