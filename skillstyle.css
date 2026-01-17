@@ -159,7 +159,7 @@ nav ul li:hover {
 }
 
 .boxes:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(-50deg, #ffffff1a, #1a1919, #0e0b1f);
     border: 1px solid hsl(197, 97%, 48%);
     box-shadow: 0 0 20px rgba(0, 168, 232, 0.4);
     transform: translateY(-10px) scale(1.02);
@@ -195,4 +195,5 @@ nav ul li:hover {
     padding: 3px;
     border-radius: 8px;
     font-size: 0.8rem;
+
 }
