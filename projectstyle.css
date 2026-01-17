@@ -124,7 +124,6 @@ nav ul li:hover {
 }
 
 .skill:hover {
-    background-color: #002a3a;
     color: hsl(197, 97%, 48%);
     transition: all 0.3s ease;
 }
@@ -175,7 +174,7 @@ nav ul li:hover {
 
 .boxes:hover {
     border: 1px solid hsl(197, 97%, 48%);
-    background-color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(-50deg, #ffffff1a, #1a1919, #0e0b1f);
     /* Slightly lighter glass on hover */
     box-shadow: 0 0 20px rgba(0, 168, 232, 0.4);
     /* Cyan ambient glow */
@@ -206,11 +205,25 @@ nav ul li:hover {
 
 .btn {
     margin-top: 20px;
-    background-color: hsl(197, 97%, 48%);
+    background: linear-gradient(-50deg, #60c5ed, #f9ed66, #f353e0);
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    border: 1px solid hsl(197, 97%, 48%);
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Slightly lighter glass on hover */
+    box-shadow: 0 0 20px rgba(0, 168, 232, 0.4);
+    /* Cyan ambient glow */
+    transform: translateY(-4px) scale(1.02);
     transition: all 0.3s ease-in-out;
 }
